@@ -5,7 +5,7 @@ from django.db import models
 class UserManager(models.Manager):
     def basic_validator(self, postData):
         errors = {}
-        hello = ""
+
         if len(postData['first_name']) < 2:
             errors["name"] = "First name should be at least 2 characters"
         if len(postData['last_name']) < 3:

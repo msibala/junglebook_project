@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'jungle_app/css/ocean.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'jungle_app/css/sea.css' %}">
     <title>Ocean Animals</title>
 </head>
 <body>
@@ -15,10 +16,12 @@
         <div id="body">
             <div id="story">
                 <!-- one -->
+                {% load static %}
                 <div class=description>D is for Dolphin</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/sea animals/dolphin.jpg" alt="Girl in a jacket" width="350" height="380">
+                      {% load static %}
+                        <img src="{% static 'jungle_app/images/dolphin.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -38,7 +41,7 @@
                 <div class=description>J is for Jellyfish</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/sea animals/jellyfish.jpg" alt="Girl in a jacket" width="350" height="380">
+                      <!-- <img src="{% static 'jungle_app/images/jellyfish.jpg'%}" alt="My Image"> -->
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">

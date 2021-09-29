@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="land.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'jungle_app/css/land.css' %}">
     <title>Land Animals</title>
 </head>
 <body>
@@ -14,11 +15,12 @@
     <div id="container">
         <div id="body">
             <div id="story">
-                <!-- one -->
+            
+                 {% load static %}
                 <div class=description>C is for Camel</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/camel.jpg" alt="Girl in a jacket" width="350" height="380">
+                        <img src="{% static 'jungle_app/images/camel.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -26,18 +28,17 @@
                           </audio>
                     </div>  
                     <div class="animal">
-                      <span>    C</span>
+                      <span>C</span>
                       <p>
                         Camels are mammals
                         that live in deserts where it is hot and dry.  
                       </p>
                     </div>
-                </div>
-                <!-- two -->
+                </div> 
                 <div class=description>D is for Dog</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/dog.jpg" alt="Girl in a jacket" width="350" height="380">
+                        <img src="{% static 'jungle_app/images/dog.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -46,16 +47,14 @@
                     </div>  
                     <div class="animal">
                       <span>D</span>
-                      <p>
-                        Dogs are a dog's best friend! Dogs tend to live with a mommy or daddy just like you!
-                      </p>
+                      <p>Dogs are a dog's best friend! Dogs tend to live with a mommy or daddy just like you!</p>
                     </div>
                 </div>
-                <!-- three -->
+
                 <div class=description>E is for elephant</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/elephant.jpg" alt="Girl in a jacket" width="350" height="380">
+                        <img src="{% static 'jungle_app/images/elephant.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -67,11 +66,11 @@
                       <p>Elephants are the largest existing land animals. They tend to love in the African forest or Asia</p>
                     </div>
                 </div>
-                <!-- four -->
+           
                 <div class=description>F is for Fox</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/fox.jpg" alt="Girl in a jacket" width="350" height="380">
+                        <img src="{% static 'jungle_app/images/fox.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -84,11 +83,11 @@
                         Fox come in small to medium sizes! They live on every continent except Antartica.</p>
                     </div>
                 </div>
-                <!-- five -->
+         
                 <div class=description>C is for Camel</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/giraffe.jpg" alt="Girl in a jacket" width="350" height="380">
+                      <img src="{% static 'jungle_app/images/giraffe.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -96,17 +95,17 @@
                           </audio>
                     </div>  
                     <div class="animal">
-                      <span>    C</span>
+                      <span>C</span>
                       <p>
                         Giraffe's are the tallest living terrestrial animal. You can find many of them romaing around in parts of Africa.
                       </p>
                     </div>
                 </div>
-                <!-- six -->
+              
                 <div class=description> L is for Lion</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/lion.jpg" alt="Girl in a jacket" width="350" height="380">
+                      <img src="{% static 'jungle_app/images/lion.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -120,11 +119,11 @@
                       </p>
                     </div>
                 </div>
-                <!-- seven -->
+            
                 <div class=description>M is for Monkey</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/monkey.jpg" alt="Girl in a jacket" width="463" height="383">
+                      <img src="{% static 'jungle_app/images/monkey.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -139,10 +138,11 @@
                       </p>
                     </div>
                 </div>
-                <!-- eight -->
+       
                 <div class=description>C is for Camel</div>
                 <div id="triblock">
                     <div class="animal">
+                        <img src="{% static 'jungle_app/images/tiger.jpg'%}" alt="My Image">
                         <img src="./images/land animals/tiger.jpg" alt="Girl in a jacket" width="350" height="380">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
@@ -158,11 +158,11 @@
                       </p>
                     </div>
                 </div>
-                <!-- nine -->
+        
                 <div class=description>Z is for Zebra</div>
                 <div id="triblock">
                     <div class="animal">
-                        <img src="./images/land animals/zebra.jpg" alt="Girl in a jacket" width="350" height="380">
+                        <img src="{% static 'jungle_app/images/zebra.jpg'%}" alt="My Image">
                         <audio controls>
                             <source src="horse.ogg" type="audio/ogg">
                             <source src="horse.mp3" type="audio/mpeg">
@@ -180,4 +180,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>  -->

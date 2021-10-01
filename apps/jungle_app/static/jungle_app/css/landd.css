@@ -1,0 +1,51 @@
+*
+{
+    margin: 0px auto;
+    padding: 0px auto; 
+}
+#container{
+    height: 5000px;
+    width: 1000px;
+    border: 2px solid #000000;
+    background-color: rgb(125, 133, 101);
+    font-family: 'Dela Gothic One';
+ 
+}
+#body{
+    height: 4500px;
+    width: 1000px;
+    border: 2px dashed black;
+}
+#triblock{
+    height: 450px;
+    width: 1000px;
+    display: flex;
+    border: 2px solid pink;
+    color: white;
+}
+#story{
+    height: 4500px;
+
+}
+.description{
+    height: 80px;
+    width: 1000px;
+    border: 2px solid yellow;
+}
+.animal{
+    border: 2px solid black;
+    height: 450px;
+    width: 470px;
+}
+span { 
+    text-align: center;
+    font-size: 900%;
+    color: lightgrey;
+}
+img{
+    border-radius: 4px;
+    height: 300px;
+    width: 300px; 
+    margin-top: 15px;
+    
+}

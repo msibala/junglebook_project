@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'jungle_app/css/animals.css' %}">
+    <title>Jonathan's Jungle Book</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+        </style>
+    <div id="container">
+        <div id="header">
+            <h1>Welcome to Jonathan's Jungle Book!</h1>
+            <div class="col sm-0 med-1">
+            <p>Where we explore the various kinds of wildlife</p>
+        </div>
+        <div id="top_body">
+            <br>
+            <br>
+            <p>At a very young age, he was amused by the stories 
+            his parents would tell him about his farm 
+            <br><br>
+            life. How his father cared for land animals, sea animals 
+            and animals that even fly.</p>
+            <br>
+            <p>On his first  birthday, they visited a zoo so he could meet some of those animals in real life. </p>
+            <br>
+            <!-- Cebuano Translation: -->
+            <!-- <br>
+            Katong bata pa si baby Jonathan, gusto kaayo sia sa mnga esturia sa iyang papa kabahin sa farm. -->
+        </div>
+        <div id="body">
+            <div id="animal">
+                {% load static %}
+                <img src="{% static 'jungle_app/images/guanaco.png'%}" alt="My Image">
+                <!-- <img src="./images/guanaco.png" alt="caribou in the wild" width="250" height="250"> -->
+                <br> 
+                <h3><a href="/land">Land Animals</a></h3>
+            </div>
+            <div id="animal">
+                <img src="{% static 'jungle_app/images/turtle.png'%}" alt="My Image">
+                <br>
+                <h3><a href="/ocean">Ocean Animals</a></h3>
+            </div>
+            <div id="animal">
+                <img src="{% static 'jungle_app/images/birds.png'%}" alt="My Image">
+                <h3><a href="/aerial">Winged Animals</a></h3>
+            </div> 
+        </div> 
+        </div> 
+    </div>
+</html>

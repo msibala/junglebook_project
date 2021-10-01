@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'jungle_app/css/wall.css' %}">
+    <title>New Parents Forum</title>
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <div id="hearboxes"><h3 id="name"> Welcome {{request.session.u_fname}} da baby club</h3></div>
+            <div id="hearboxes"><h3 id="name"> Welcome {{request.session.u_fname}} to da baby club!</h3></div>
             <div id=hearboxes> <p style= "direction: rtl;"><a href="/logout">Log Out</a><h3></h3></div>
         </div>
         <div id="body">
-            <h2>Post a message:</h2>
+            <div id="photo">
+                {% load static %}
+                <img src="{% static 'jungle_app/images/mother_child.jpg'%}" alt="My Image">
+            </div>
+            <br>
+            <br>
+            <h2>Let Out all the Feels:</h2>
             <form action="/post" method="post">
                 {% csrf_token %}
                 <textarea id="messagebox" name="message" row="3" cols="80"></textarea>
                 <input type="hidden" name="id" value="request.session['u_id']">
                 <br>
-                <input id="msgbtn" type="submit" value="Post a message!">
+                <input id="msgbtn" type="submit" value="Post on Wall">
             </form>
-         <!-- {% for post in posts reveresed %} 
+                {% for post in posts reversed %} 
+                <!-- (try to explain this. post is related to post. messager to messager. first name to first name but why do you need a subtraction sign?) -->
                 <h3 id="postdetails">{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a> {% endif %}</h3>
                 <p id="post">{{post.message}}</p>
                 <p id="micro">...posted {{post.created_at|timesince}} ago.</p>
@@ -29,7 +38,7 @@
                 <h4 id="commentdetails">{{comment.commentor.first_name}} {{comment.commentor.last_name}} - {{comment.created_at|date:'F jS Y'}}</h4>
                 <p id="comment">{{comment.comment}} {% if comment.commentor.id == request.session.u_id %} <a href="/delcom/{{comment.id}}"><button>Delete</button></a> {% endif %}</p>
                 <p id="micro">...posted {{comment.created_at|timesince}} ago.</p>
-            {% endfor %} -->
+            {% endfor %} 
         <h3 id="cmtheader">Post a comment:</h3>
         <form action="/comment" method="post">
             {% csrf_token %}
@@ -41,5 +50,47 @@
     {% endfor %}
         </div>
     </div>
+    <div id="footer">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap');
+            </style>
+        <div id="footer_left">
+            <p><b>for the bbs!!</b>
+            <br>
+            <br>
+            <br>
+            <p><u><a href="/animals">explore jonathan's jungle book</a></u></p>
+            <br>
+            <p><u><a href="/food">learn your fruits & veggies</a></u></p>
+            <br>
+            <p><u><a href="/anatomy">anatomy with freddy</a></u></p>
+        </div>
+        <div id="footer_center">
+            <p><b>WELLNESS FOR THE PARENTS</b></p>
+            <br>
+            Babysitter Hotline Bling
+            <br>
+            <br>
+            Therapy Hotline Bling
+            <br>
+            <br>
+            Fiesta in the Sun
+            <br>
+            <br>
+            Game Nights
+        </div>
+        <div id="footer_right">
+            <p>NEWSLETTER<b></b></p>
+            <br>
+
+            <p>Subscribe to recieve updates & babysitter avails!</p>
+            <br>
+            <br>
+
+            <input class="fields" type="text" name="email" value="Enter your email address"></p>
+            <br>
+            <input class="btn" type="submit" value="SUBSCRIBE">
+        </div>
+</div>
 </body>
 </html>

@@ -6,24 +6,8 @@ import re
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
 
-
-def home_page(request):
-    return render(request, 'jungle_app/home_page.html')
-
-def land(request):
-    return render(request, 'jungle_app/land.html')
-
-def ocean(request):
-    return render (request, 'jungle_app/ocean.html')  
-
-def aerial(request):
-    return render (request, 'jungle_app/aerial.html')  
-
-def login(request):
+def index(request):
     return render(request, 'jungle_app/login.html')
-
-def register(request):
-    return render(request, 'jungle_app/register.html')
 
 from .models import User
 from .models import User
@@ -35,8 +19,8 @@ def register(request):
 
         return redirect('/')
 
-    hashed = bcrypt.hashpw(request.POST['password'].encode(), bcrypt.gensalt())
-    decoded_hash = hashed.decode('utf-8')
+    # hashed = bcrypt.hashpw(request.POST['password'].encode(), bcrypt.gensalt())
+    # decoded_hash = hashed.decode('utf-8')
 
     user = User.objects.create(first_name=request.POST['first_name'], last_name=request.POST['last_name'], email=request.POST['email'], password=decoded_hash, birth_year=request.POST['birth_year'])
     print(f" user {user.id}")
@@ -86,3 +70,25 @@ def delmsg(request, id):
 def delcom(request, id):
     Comment.objects.get(id=id).delete()
     return redirect('/wall')
+
+def animals(request):
+    return render(request, 'jungle_app/animals.html')
+
+def land(request):
+    return render(request, 'jungle_app/land.html')
+
+def ocean(request):
+    return render (request, 'jungle_app/ocean.html')  
+
+def aerial(request):
+    return render (request, 'jungle_app/aerial.html')  
+
+def food(request):
+    return render (request, 'jungle_app/food.html')  
+
+def anatomy(request):
+    return render(request, 'jungle_app/anatomy.html')
+
+def register(request):
+    return render(request, 'jungle_app/register.html')
+

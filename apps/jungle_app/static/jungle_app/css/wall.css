@@ -5,29 +5,49 @@
     font-family: lato, sans-serif;
     /* background-color: rgb(225,207,191); */
 }
+#container{ 
+    height: 1000px;
+    width: 1450px;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color:rgb(240,239,231);
+}
 
 #header{
     padding-top: 20px;
-    height:100px;
+    height:80px;
     width: 900px;
     display: flex;
+    border-bottom: 2px solid rgb(212,211,205);
 }  
-
-#container{ 
-    height: 1000px;
-    width: 900px;
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    background-color:rgb(241,240,235);
-  
-
+#links{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
 }
+
 #body{
     text-align: center;
     padding-top: 50px;
     height: 800px;
-    width: 800px;
-    background-color:rgb(138,153,170);
+    width: 950px;
+    background-color: rgb(146, 146, 150);
+    border: 2px solid black;
+    margin-top: 30px;
 
+}
+#photo{
+    height: 350px;
+    width: 350px;
+    border: 3px solid black;
+    border-radius: 35px;
+    background-color: rgb(192,205,212);
+}
+img {
+    border-radius: 15px;
+    height: 280px;
+    width: 300px; 
+    margin-top: 35px;
+  
 }
 #logout{
     text-align: right;
@@ -37,4 +57,58 @@
 #cmtdiv {
     width: 100px;
     height: 105px;
+}  
+#links{
+    height: 100px;
+    width: 950px;
+    border: 2px solid black;
+}
+#footer{
+    height: 341px;
+    width: 1450px;
+    /* border: 2px solid black; */
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+}
+#footer_left{
+    height: 305px;
+    width: 600px;
+    /* border: 2px solid blue; */
+    padding-top: 20px;
+    font-size: 15px;
+    
 } 
+#footer_center{
+    height: 305px;
+    width: 425px;;
+    /* border: 2px dashed red; */
+    font-size: 15px;
+    padding-top: 20px;
+
+}
+#footer_right{
+    height: 305px;
+    width: 350px;
+    /* border: 2px solid green; */
+    font-size: 15px;
+    padding-top: 20px;
+}
+.fields{
+    width: 250px;
+    height: 35px;
+    font-family: "Josefin Sans", sans-serif;
+    border: 1px solid rgb(208,207,200);
+}
+
+.btn {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+
+}
+

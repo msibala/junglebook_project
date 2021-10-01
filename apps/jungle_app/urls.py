@@ -6,19 +6,20 @@ from . import views
                     
 
 urlpatterns = [
-    url(r'^$', views.home_page),
-    # url(r'^register$', views.register),
-    url(r'^land$', views.land),
-    url(r'^ocean$', views.ocean),
-    url(r'^aerial', views.aerial),
+    url(r'^$', views.login),
     url(r'^register$', views.register),
-    url(r'^login$', views.login),
     url(r'^wall$', views.wall),
     url(r'^post$', views.post),
     url(r'^comment$', views.comment),
     url(r'^logout$', views.logout),
     url(r'^delmsg/(?P<id>[0-9]+)$', views.delmsg),
     url(r'^delcom/(?P<id>[0-9]+)$', views.delcom),
+    url(r'^land$', views.land),
+    url(r'^ocean$', views.ocean),
+    url(r'^aerial', views.aerial),
+    url(r'^food$', views.food),
+    url(r'^animals$', views.animals),
+  
 
  
 ] +  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

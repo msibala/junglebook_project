@@ -11,13 +11,16 @@
 <body>
     <div id="container">
         <div id="header">
-            <div id="hearboxes"><h3 id="name"> Welcome {{request.session.u_fname}} to da baby club!</h3></div>
+            <br>
+            <br>
+            <div id="hearboxes"><h2 id="name"> Welcome {{request.session.u_fname}} to da baby club!</h2></div>
             <div id=hearboxes> <p style= "direction: rtl;"><a href="/logout">Log Out</a><h3></h3></div>
         </div>
         <div id="body">
             <div id="photo">
                 {% load static %}
-                <img src="{% static 'jungle_app/images/mother_child.jpg'%}" alt="My Image">
+                <img src="{% static 'jungle_app/images/two_kids.jpg'%}" alt="My Image">
+                <p>Reina Ramirez</p>
             </div>
             <br>
             <br>
@@ -59,11 +62,11 @@
             <br>
             <br>
             <br>
-            <p><u><a href="/animals">explore jonathan's jungle book</a></u></p>
+            <p><a href="/animals">explore jonathan's jungle book</a></p>
             <br>
-            <p><u><a href="/food">learn your fruits & veggies</a></u></p>
+            <p><a href="/food">learn your fruits & veggies</a></p>
             <br>
-            <p><u><a href="/anatomy">anatomy with freddy</a></u></p>
+            <p><a href="/anatomy">anatomy with freddy</a></p>
         </div>
         <div id="footer_center">
             <p><b>WELLNESS FOR THE PARENTS</b></p>

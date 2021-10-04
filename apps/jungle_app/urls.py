@@ -6,7 +6,8 @@ from . import views
                     
 
 urlpatterns = [
-    url(r'^$', views.login),
+    url(r'^$', views.home),
+    url(r'^login$', views.login),
     url(r'^register$', views.register),
     url(r'^wall$', views.wall),
     url(r'^post$', views.post),
@@ -19,6 +20,7 @@ urlpatterns = [
     url(r'^aerial', views.aerial),
     url(r'^food$', views.food),
     url(r'^animals$', views.animals),
+    url(r'^anatomy$', views.anatomy),
   
 
  

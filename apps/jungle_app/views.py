@@ -1,3 +1,4 @@
+# from typing import _get_type_hints_obj_allowed_types
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
 from .models import *
@@ -31,6 +32,7 @@ def register(request):
 
         
 def login(request):
+    print(request.data)
     user_list = User.objects.filter(email=request.POST['email'])
     user = user_list[0]
     print(user.id)
@@ -42,6 +44,15 @@ def login(request):
 
     
     return render(request, 'jungle_app/wall.html')
+
+def home(request):
+    if request.session.get('user', False):
+        return render(request, 'jungle_app/wall.html')
+    else:
+        return render(request, 'jungle_app/login.html')
+
+
+
 
 def wall(request):
     context = {
@@ -90,5 +101,5 @@ def anatomy(request):
     return render(request, 'jungle_app/anatomy.html')
 
 def register(request):
-    return render(request, 'jungle_app/register.html')
+    return render(request, 'jungle_app/wall.html')
 

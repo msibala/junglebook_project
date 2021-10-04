@@ -25,29 +25,34 @@
     background-color: rgb(237,208,193);
     font-family: 'Dela Gothic One';
     color: rgb(94, 94, 94);
+    margin-bottom: 100px;
    
 }
 /* this isn't working */
 #header{
     padding-top: 20px;
     height:80px;
-    width: 900px;
-    display: flex;
-    border: 2px solid rgb(150, 149, 142);
+    width: 1200px;
+    background-color: rgb(240,239,231);
+    border-radius: 20px;
 }  
 #top_body{
     height: 400px;
-    width: 1000px;
+    width: 1200px;
     font-size: 25px;
-    border: 2px solid black;
+    background-color: rgb(240,239,231);
+    border-radius: 20px;
     margin-top: 50px;
 }
 #body{
-    height: 500px;
+    height: 600px;
     width: 1200px;
     display: flex;
+    border-radius: 20px;
+    background-color: rgb(240,239,231);
     margin-top: 15px;
-    border: 2px solid black;
+    margin-right: 1000px;
+
     
 }
 img {
@@ -60,21 +65,5 @@ img {
 }
 a:link {
     text-decoration: none;
-    color:  rgb(94, 94, 94);
+    color: black;
 }
-
-/* .animal{
-   position: relative;
-   height: 250px;
-   width: 245px;
-   display: inline-block;
-   overflow: hidden;
-   -webkit-font-smoothing: antialiased;
-   border: 2px solid blue; */
-
-/* img {
-   border-radius: 4px;
-   height: 250px;
-   width: 245px; 
-   transition: all linear 0.7s;  */
-

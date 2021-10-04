@@ -6,7 +6,7 @@
     /* background-color: rgb(225,207,191); */
 }
 #container{ 
-    height: 1000px;
+    height: 1300px;
     width: 1450px;
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     background-color:rgb(240,239,231);
@@ -14,11 +14,17 @@
 
 #header{
     padding-top: 20px;
-    height:80px;
-    width: 900px;
+    height:90px;
+    width: 1000px;
     display: flex;
     border-bottom: 2px solid rgb(212,211,205);
 }  
+#hearboxes{
+    height: 50px;
+    width: 500px;
+    margin-top: 20px;
+  
+}
 #links{
     height: 100px;
     width: 100px;
@@ -28,25 +34,24 @@
 #body{
     text-align: center;
     padding-top: 50px;
-    height: 800px;
-    width: 950px;
-    background-color: rgb(146, 146, 150);
-    border: 2px solid black;
+    height: 1100px;
+    width: 1000px;
     margin-top: 30px;
+    background-color: rgb(241,244,245);
+    border-radius: 40px;
+   
 
 }
 #photo{
     height: 350px;
-    width: 350px;
-    border: 3px solid black;
-    border-radius: 35px;
+    width: 1000px;
     background-color: rgb(192,205,212);
 }
 img {
-    border-radius: 15px;
-    height: 280px;
-    width: 300px; 
-    margin-top: 35px;
+    border-radius: 200px;
+    height: 290px;
+    width: 320px; 
+    margin-top: 25px;
   
 }
 #logout{
@@ -112,3 +117,7 @@ img {
 
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+}

@@ -25,8 +25,8 @@ def register(request):
 
     user = User.objects.create(first_name=request.POST['first_name'], last_name=request.POST['last_name'], email=request.POST['email'], password=decoded_hash, birth_year=request.POST['birth_year'])
     print(f" user {user.id}")
-    request.session['u_id'] = user.id
-    request.session['u_fname'] = user.first_name
+    # request.session['u_id'] = user.id
+    # request.session['u_fname'] = user.first_name
 
     return redirect('/wall')
 

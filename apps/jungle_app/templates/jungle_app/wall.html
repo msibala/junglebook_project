@@ -41,7 +41,7 @@
                 <h4 id="commentdetails">{{comment.commentor.first_name}} {{comment.commentor.last_name}} - {{comment.created_at|date:'F jS Y'}}</h4>
                 <p id="comment">{{comment.comment}} {% if comment.commentor.id == request.session.u_id %} <a href="/delcom/{{comment.id}}"><button>Delete</button></a> {% endif %}</p>
                 <p id="micro">...posted {{comment.created_at|timesince}} ago.</p>
-            {% endfor %} 
+                {% endfor %} 
         <h3 id="cmtheader">Post a comment:</h3>
         <form action="/comment" method="post">
             {% csrf_token %}

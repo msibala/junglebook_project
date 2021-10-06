@@ -17,6 +17,21 @@ img {
     #font-test{
         width: 100%;
         height: 50%;
+        border: 2px solid black;
     }
+    img{
+        border-radius: 4px;
+        height: 50%;
+        width: 50%; 
+        margin-top: 15px;
+        
 
+}
+@media only screen and (max-width: 480px){
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    .navbtn {
+        height: 50%;
+        width: 100%;
+        background-color: yellow;
+    }
 }

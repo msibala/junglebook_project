@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Anatomy with Freddy</title>
 </head>
 <body>
-    anatomy stuff here - use bootsrap
+    anatomy stuff here - use bootsrap / grid system
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col bg-secondary text-light m-2">One</div>
+                <div class="col bg-secondary text-light m-2">Two</div>
+                <div class="col bg-secondary text-light m-2">Three</div>
+            </div>
+        </div>
+        <div id="copy-toolbar-container" style="cursor: pointer; position: absolute; top: 5px; right: 5px; padding: 0px 3px; background: rgba(224, 224, 224, 0.2); box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px; color: rgb(187, 187, 187); border-radius: 0.5em; font-size: 0.8em;"><span id="copy-toolbar">copy</span></div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col bg-secondary text-light m-2">One</div>
+            <div class="col bg-secondary text-light m-2">Two
+                <div class="row">
+                    <div class="col bg-info text-light m-2">A</div>
+                    <div class="col bg-info text-light m-2">B</div>
+                    <div class="col bg-info text-light m-2">C</div>
+                </div>
+            </div>
+            <div class="col bg-secondary text-light m-2">Three</div>
+        </div>
+    </div>
 </body>
 </html>

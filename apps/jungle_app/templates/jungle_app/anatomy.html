@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +39,10 @@
             <div class="col bg-secondary text-light m-2">One</div>
             <div class="col bg-secondary text-light m-2">Two
                 <div class="row">
-                    <div class="col bg-info text-light m-2">A</div>
+                    <div class="col bg-info text-light m-2">
+                        <img src="{% static 'jungle_app/images/food_basket.jpg'%}" alt="My Image">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
                     <div class="col bg-info text-light m-2">B</div>
                     <div class="col bg-info text-light m-2">C</div>
                 </div>

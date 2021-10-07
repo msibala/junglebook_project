@@ -10,28 +10,58 @@ img {
     margin-top: 15px;
 
 }
-#container{
-    width: 100%;
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px){
+    #container{
+        width: 100%;
+        font-family: 'Gluten', cursive;
+    }
+    .headline{
+        height: 20%;
+        width: 40%;
+        margin-top: 40px;
+    }
     #font-test{
         width: 100%;
-        height: 50%;
+        height: 100%;
         border: 2px solid black;
+        display: flex;
+       
+    }
+    .grey{
+        width: 70%;
+        height: 70%;
+    }
+
+    .red{
+        width: 70%;
+        height: 70%;
+
+    }
+      
+    .orange{
+        width: 70%;
+        height: 70%;
+    }
+
+    .yellow{
+        width: 70%;
+        height: 70%;
+    }
+
+    .green{
+        width: 70%;
+        height: 70%;
+    }
+
+    .purple{
+        width: 70%;
+        height: 70%;
     }
     img{
         border-radius: 4px;
-        height: 50%;
-        width: 50%; 
+        height: 100%;
+        width: 100%; 
         margin-top: 15px;
-        
-
 }
-@media only screen and (max-width: 480px){
-    /* we will set these stylings only if the device is a screen with a width of 480px or less */
-    .navbtn {
-        height: 50%;
-        width: 100%;
-        background-color: yellow;
-    }
+
 }

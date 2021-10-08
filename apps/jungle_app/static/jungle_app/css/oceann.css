@@ -11,7 +11,7 @@
     #body{
         height: 100%;
         width: 100%;
-        background-color: rgb(84, 116, 86);
+        background-color: rgb(125, 172, 190);
     }
     #triblock{
         height: 70%;
@@ -45,22 +45,25 @@
         margin-top: 15px;
        
     }
-    
+
+}
+
 /* }
 #container{
     height: 3900px;
-    width: 1000px;
-    background-color: rgb(125, 133, 101);
-    font-family: 'Dela Gothic One';
+    width: 1000px; */
+    /* background-color: rgb(125, 133, 101); */
+    /* background-color: rgb(125, 172, 190);
+    font-family: 'Dela Gothic One'; */
  
-}
+/* }
 #body{
     height: 4500px;
     width: 900px;
    
 }
 #triblock{
-    height: 350px;
+    height: 400px;
     width: 800px;
     display: flex;
     border-radius: 40px;
@@ -79,13 +82,13 @@
   
 }
 .animal{
-    height: 350px;
+    height: 400px;
     width: 300px;
     margin-bottom: 80px;
 }
 span { 
     text-align: center;
-    font-size: 750%;
+    font-size: 700%;
  
 }
 img{
@@ -96,5 +99,4 @@ img{
     
 }
 
-} */
-}
+ */

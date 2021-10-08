@@ -2,7 +2,7 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
 from .models import *
-# import bcrypt
+import bcrypt
 import re
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
@@ -20,13 +20,13 @@ def register(request):
 
         return redirect('/')
 
-    # hashed = bcrypt.hashpw(request.POST['password'].encode(), bcrypt.gensalt())
-    # decoded_hash = hashed.decode('utf-8')
+    hashed = bcrypt.hashpw(request.POST['password'].encode(), bcrypt.gensalt())
+    decoded_hash = hashed.decode('utf-8')
 
-    user = User.objects.create(first_name=request.POST['first_name'], last_name=request.POST['last_name'], email=request.POST['email'], password=decoded_hash, birth_year=request.POST['birth_year'])
+    user = User.objects.create(first_name=request.POST['first_name'], last_name=request.POST['last_name'], email=request.POST['email'], password=decoded_hash)
     print(f" user {user.id}")
-    # request.session['u_id'] = user.id
-    # request.session['u_fname'] = user.first_name
+    request.session['u_id'] = user.id
+    request.session['u_fname'] = user.first_name
 
     return redirect('/wall')
 
@@ -61,9 +61,10 @@ def wall(request):
     return render(request, 'jungle_app/wall.html', context)
 
 def post(request):
+    print(request.session['u_id'])
     message = Message.objects.create(message=request.POST['message'], messager=User.objects.get(id=request.session['u_id']))
     print(message.id)
-    return redirect('/wall')
+    return redirect('/wall') 
 
     
 def comment(request):
@@ -72,6 +73,8 @@ def comment(request):
     return redirect('/wall')
 
 def logout(request):
+    # del request.session['u_id']
+    # del request.session['u_fname']
     return render(request,"jungle_app/logout.html")
 
 def delmsg(request, id):
@@ -99,7 +102,3 @@ def food(request):
 
 def anatomy(request):
     return render(request, 'jungle_app/anatomy.html')
-
-def register(request):
-    return render(request, 'jungle_app/wall.html')
-

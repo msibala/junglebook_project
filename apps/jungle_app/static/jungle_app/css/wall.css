@@ -42,14 +42,14 @@
     }
     #photo{
         height: 30%;
-        width: 80%;
+        width: 100%;
         background-color: rgb(192,205,212);
     }
     img {
-        border-radius: 360%;
-        height: 13%;
-        width: 17%; 
-        margin-top: 25px;
+        /* border-radius: 50%; */
+        height: 33%;
+        width: 33%; 
+        /* margin-top: 25px; */
         border: 2px solid black;
       
     }

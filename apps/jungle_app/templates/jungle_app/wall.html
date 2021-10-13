@@ -13,10 +13,10 @@
         <div id="header">
             <br>
             <br>
-            <div id="hearboxes"><h2 id="name"> Welcome {{request.session.u_fname}} to Da Baby Club!</h2></div>
-            <div id=hearboxes> <p style= "direction: rtl;"><a href="/logout">Log Out</a><h3></h3></div>
+            <div id="headerboxes"><h2 id="name"> Welcome {{request.session.u_fname}} to Da Baby Club!</h2></div>
+            <div id=headerboxes> <p style= "direction: rtl;"><a href="/logout">Log Out</a><h3></h3></div>
         </div>
-        <div id="body">
+   <div id="body">
             <div id="photo">
                 {% load static %}
                 <img src="{% static 'jungle_app/images/two_kids.jpg'%}" alt="My Image">
@@ -33,8 +33,7 @@
                 <input id="msgbtn" type="submit" value="Post on Wall">
             </form>
                 {% for post in posts reversed %} 
-                <!-- (try to explain this. post is related to post. messager to messager. first name to first name but why do you need a subtraction sign?) -->
-                <h3 id="postdetails">{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a> {% endif %}</h3>
+               <h3 id="postdetails">{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a> {% endif %}</h3>
                 <p id="post">{{post.message}}</p>
                 <p id="micro">...posted {{post.created_at|timesince}} ago.</p>
                 {% for comment in post.post_comments.all %}

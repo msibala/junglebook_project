@@ -2,29 +2,30 @@
 {
     margin: 0px auto;
     padding: 0px auto; 
-}
+/* }
 img {
     border-radius: 4px;
     height: 730px;
     width: 650px; 
-    margin-top: 15px;
+    margin-top: 15px; */
 
 }
 @media only screen and (min-width: 320px){
     #container{
         width: 100%;
         font-family: 'Gluten', cursive;
+        border: 2px solid black;
+        background-color: rgb(168,159,150);
     }
     .headline{
         height: 20%;
         width: 40%;
         margin-top: 40px;
-        background-color: black;
+       
     }
     #font-test{
         width: 100%;
         height: 100%;
-        border: 2px solid black;
         display: flex;
        
     }

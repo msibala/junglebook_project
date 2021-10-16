@@ -2,13 +2,14 @@
 {
     margin: 0px auto;
     padding: 0px auto;
-    font-family: lato, sans-serif;
+    font-family: 'Andada Pro', serif;
     /* background-color: rgb(225,207,191); */
 }
 @media only screen and (min-width: 320px){
     #container{ 
         width: 100%;
-        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: 'Andada Pro', serif;
         /* background-color: rgb(240,239,231); */
         background-color: rgb(168,159,150);
     }
@@ -117,7 +118,7 @@
     
     a:link {
         text-decoration: none;
-        color: black;
+        color: rgb(230,239,0);
     }
     input[type=hidden], select {
         width: 100%;

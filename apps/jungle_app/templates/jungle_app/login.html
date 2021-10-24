@@ -18,12 +18,18 @@
                     <form action="/register" method="post">
                         {% csrf_token %}
                         <br>
-                            <p class="alright">First Name:<input class="fields" type="text" name="first_name"></p>
-                            <p class="alright">Last Name:<input class="fields" type="text" name="last_name"></p>
-                            <p class="alright">Email:<input class="fields" type="text" name="email"></p>
-                            <p class="alright">Password:<input class="fields" type="password" name="password"></p>
-                            <p class="alright">Confirm Password:<input class="fields" type="password" name="confirm_pw"></p>
-                            <button class="submit">Register</button>
+                        <p class="alright">FIRST NAME </p>
+                        <input class="fields" type="text" name="first_name">
+                        <p class="alright">LAST NAME</p>
+                        <input class="fields" type="text" name="last_name">
+                        <p class="alright">EMAIL</p>
+                        <input class="fields" type="text" name="email">
+                        <p class="alright">PASSWORD</p>
+                        <input class="fields" type="text" name="password">
+                        <p class="alright">CONFIRM PASSWORD</p>
+                        <input class="fields" type="text" name="password">
+                        <br>
+                        <button class="submit">Register</button>
                             <div id="errors">
                                 {% if messages %}
                                     {% for messages in messages %}
@@ -41,8 +47,11 @@
             <form action="/wall" method="post">
                 <br>
                 {% csrf_token %}
-                <p class="alright">Email:<input class="fields" type="text" name="first_name"></p>
-                <p class="alright">Password:<input class="fields" type="text" name="first_name"></p>
+                <p class="alright">EMAIL</p>
+                <input class="fields" type="text" name="first_name">
+                <p class="alright">PASSWORD</p>
+                <input class="fields" type="text" name="first_name">
+                <br><br>
                 <button class="submit">Login</button>
             </form>
         </div>

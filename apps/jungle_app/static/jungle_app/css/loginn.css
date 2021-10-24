@@ -51,6 +51,8 @@ input[type=text], select {
     background-color: rgb(60,89,151);
     border-radius: 15px;
     color: white;
+    width: 150px;
+    height: 35px;
 
   }
   input[type=text], select {

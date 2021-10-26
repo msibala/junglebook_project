@@ -9,9 +9,12 @@
     <title>Login and Registration</title>
 </head>
 <body>
+    <div id="header">
+        <p>BABY CLUB</p>
+    </div>
     <div id="container">
         <div class="container">
-            <div class="row">
+           <div class="row">
               <div class="col-md text-primary">
                 <div id="registration">
                     <h1>Registration</h1>
@@ -25,9 +28,9 @@
                         <p class="alright">EMAIL</p>
                         <input class="fields" type="text" name="email">
                         <p class="alright">PASSWORD</p>
-                        <input class="fields" type="text" name="password">
+                        <input class="fields" type="password" name="password">
                         <p class="alright">CONFIRM PASSWORD</p>
-                        <input class="fields" type="text" name="password">
+                        <input class="fields" type="password" name="confirm_pw">
                         <br>
                         <button class="submit">Register</button>
                             <div id="errors">
@@ -38,9 +41,9 @@
                                 {% endif %}
                             </div>
                         </form>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <div id="login">
             <h1 id="space">Login</h1>
@@ -50,7 +53,7 @@
                 <p class="alright">EMAIL</p>
                 <input class="fields" type="text" name="first_name">
                 <p class="alright">PASSWORD</p>
-                <input class="fields" type="text" name="first_name">
+                <input class="fields" type="password" name="password">
                 <br><br>
                 <button class="submit">Login</button>
             </form>

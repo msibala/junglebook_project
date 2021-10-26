@@ -3,26 +3,45 @@
     margin: 0px auto;
     padding: 0px auto;
 }
+#header{
+    height: 100px;
+    width: 900px;
+    text-align:center;
+    font-family: lato, sans-serif;
+    padding-top: 25px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 42px;
+    color: rgb(47,62,75);
+    letter-spacing: 3px;
+    background-color: rgb(242,237,231);
+   
+    
+}
 #container{
     height: 800px;
     width: 900px;
     display: flex;
     font-size: 17px;
-    background-color:rgb(241,240,235);
 
-
+    background-color: rgb(242,237,231);
 }
 h1{
-    color: rgb(216,195,164);
+    /* color: rgb(216,195,164); */
+    color: rgb(54,60,64);
+    font-weight:lighter;
     font-family: lato, sans-serif;
+    font-size: 36px;
 }
 #registration{
     height: 430px;
     width: 410px;
     margin-top: 50px;
     font-family: lato, sans-serif;
+    font-weight:lighter;
+    font-size: 14px;
     padding-top: 15px;
     padding-left: 20px;     
+    border-right: 1px solid rgb(159,166,172);
 
 }
 input[type=text], select {
@@ -35,6 +54,7 @@ input[type=text], select {
   /* border: 1px solid #ccc; */
   border-radius: 3px;
   box-sizing: border-box;
+  border: 1px solid rgb(208,207,200);
 }
 #login{
     height: 430px;
@@ -44,12 +64,14 @@ input[type=text], select {
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 25px;
+    font-weight:lighter;
+    font-size: 14px;
   
     
 }
 .submit {
-    background-color: rgb(60,89,151);
-    border-radius: 15px;
+    background-color:rgb(47,63,76) ;
+    border-radius: 5px;
     color: white;
     width: 150px;
     height: 35px;
@@ -60,8 +82,14 @@ input[type=text], select {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
-    /* display: inline-block; */
-    /* border: 1px solid #ccc; */
-    border-radius: 3px;
+    border: 1px solid rgb(208,207,200);
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    height: 30px;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(208,207,200);
     box-sizing: border-box;
   }

@@ -16,7 +16,7 @@
         <div id="header">
             <br>
             <br>
-            <div id="headerboxes"><h2 id="name"> Welcome {{request.session.u_fname}} to Da Baby Club!</h2></div>
+            <div id="headerboxes"><h2 id="name">Baby Club</h2></div>
             <div id=headerboxes> <p style= "direction: rtl;"><a href="/logout">Log Out</a><h3></h3></div>
         </div>
    <div id="body">
@@ -27,36 +27,38 @@
                 <h3>{{request.session.u_fname}}</h3>
             </div>
             <br>
-            <br>
-            <h2>Let Out all the Feels:</h2>
-            <form action="/post" method="post">
+            <div id="navigation">
+                <p>Channels, Events, For Kids</p> 
+            </div>
+             <div id="messages">
+                <form action="/post" method="post">
+                    {% csrf_token %}
+                    <textarea id="messagebox" name="message" row="3" cols="80"></textarea>
+                    <input type="hidden" name="id" value="request.session['u_id']">
+                    <br>
+                    <input id="msgbtn" type="submit" value="Share what's on your mind">
+                </form>
+                    {% for post in posts reversed %} 
+                   <h3 id="postdetails">{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a> {% endif %}</h3>
+                    <p id="post">{{post.message}}</p>
+                    <p id="micro">...posted {{post.created_at|timesince}} ago.</p>
+                    {% for comment in post.post_comments.all %}
+                    <h4 id="commentdetails">{{comment.commentor.first_name}} {{comment.commentor.last_name}} - {{comment.created_at|date:'F jS Y'}}</h4>
+                    <p id="comment">{{comment.comment}} {% if comment.commentor.id == request.session.u_id %} <a href="/delcom/{{comment.id}}"><button>Delete</button></a> {% endif %}</p>
+                    <p id="micro">...posted {{comment.created_at|timesince}} ago.</p>
+                    {% endfor %} 
+            <h3 id="cmtheader">Post a comment:</h3>
+            <form action="/comment" method="post">
                 {% csrf_token %}
-                <textarea id="messagebox" name="message" row="3" cols="80"></textarea>
+                <input id ="commentbox" type="textarea" name="comment" row="3">
                 <input type="hidden" name="id" value="request.session['u_id']">
-                <br>
-                <input id="msgbtn" type="submit" value="Post on Wall">
+                <input type="hidden" name="post_id" value="{{post.id}}">
+                <input id="cmtbtn" type="submit" value="Post a comment!">
             </form>
-                {% for post in posts reversed %} 
-               <h3 id="postdetails">{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a> {% endif %}</h3>
-                <p id="post">{{post.message}}</p>
-                <p id="micro">...posted {{post.created_at|timesince}} ago.</p>
-                {% for comment in post.post_comments.all %}
-                <h4 id="commentdetails">{{comment.commentor.first_name}} {{comment.commentor.last_name}} - {{comment.created_at|date:'F jS Y'}}</h4>
-                <p id="comment">{{comment.comment}} {% if comment.commentor.id == request.session.u_id %} <a href="/delcom/{{comment.id}}"><button>Delete</button></a> {% endif %}</p>
-                <p id="micro">...posted {{comment.created_at|timesince}} ago.</p>
-                {% endfor %} 
-        <h3 id="cmtheader">Post a comment:</h3>
-        <form action="/comment" method="post">
-            {% csrf_token %}
-            <input id ="commentbox" type="textarea" name="comment" row="3">
-            <input type="hidden" name="id" value="request.session['u_id']">
-            <input type="hidden" name="post_id" value="{{post.id}}">
-            <input id="cmtbtn" type="submit" value="Post a comment!">
-        </form>
-    {% endfor %}
+        {% endfor %}
+            </div>
         </div>
-    </div>
-    <div id="footer">
+    <!-- <div id="footer">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap');
             </style>
@@ -94,7 +96,7 @@
             <input class="fields" type="text" name="email" value="Enter your email address"></p>
             <br>
             <input class="btn" type="submit" value="SUBSCRIBE">
-        </div>
-</div>
+        </div> -->
+</div> -->
 </body>
 </html>

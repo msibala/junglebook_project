@@ -68,20 +68,32 @@
         margin-bottom: 20px;
         border-radius: 10px;
         background-color: rgb(220,223,224);
+
+    }
+    #messagebox{
+        height: 10%;
+        width: 80%;
+        border: 1px solid rgb(208,207,200);
     }
     input[type=submit], select {
-        width: 31%;
-        height: 25px;
+        width: 28%;
+        height: 30px;
         padding: 12px 20px;
         margin: 8px 0;
         font-size: 14px;
         text-align: center;
+        vertical-align: middle;
         /* display: inline-block; */
         /* border: 1px solid #ccc; */
         border-radius: 4px;
         border: 1px solid rgb(208,207,200);
+   
         /* box-sizing: border-box; */
-        }       
+    } 
+    #commentbox{
+        height: 10%;
+        width: 80%;
+        border: 1px solid rgb(208,207,200);    
      
     }
     #logout{

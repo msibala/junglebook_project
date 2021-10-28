@@ -7,10 +7,11 @@
 }
 #container{
     height: 3900px;
-    width: 1000px;
+    width: 100%;
     /* background-color: rgb(125, 133, 101); */
     background-color: rgb(125, 172, 190);
     font-family: 'Dela Gothic One';
+    /* utilize responsive web design here */
  
 }
 #body{

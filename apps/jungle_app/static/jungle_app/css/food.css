@@ -2,12 +2,6 @@
 {
     margin: 0px auto;
     padding: 0px auto; 
-/* }
-img {
-    border-radius: 4px;
-    height: 730px;
-    width: 650px; 
-    margin-top: 15px; */
 
 }
 @media only screen and (min-width: 320px){
@@ -30,24 +24,24 @@ img {
        
     }
     .grey{
-        width: 70%;
+        width: 50%;
         height: 70%;
     }
 
     .red{
-        width: 70%;
+        width: 50%;
         height: 70%;
 
     }
       
     .orange{
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
     }
 
     .yellow{
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
     }
 
     .green{

@@ -7,9 +7,16 @@
 @media only screen and (min-width: 320px){
     #container{
         width: 100%;
-        font-family: 'Gluten', cursive;
+        font-family: lato, sans-serif;
+        font-weight:lighter;
         border: 2px solid black;
-        background-color: rgb(168,159,150);
+        background-color: rgb(242,237,231);
+    }
+    #body{
+        width: 60%;
+        text-align: center;
+       
+
     }
     .headline{
         height: 20%;

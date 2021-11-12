@@ -1,5 +1,5 @@
 # background
 
 # junglebook_project
-full stack project in progress - needs login and wall 
+full stack project in progress using Django Framework
 

@@ -20,7 +20,7 @@ urlpatterns = [
     url(r'^aerial', views.aerial),
     url(r'^food$', views.food),
     url(r'^animals$', views.animals),
-    url(r'^anatomy$', views.anatomy),
+    url(r'^subchannels$', views.subchannels),
   
 
  

@@ -100,5 +100,5 @@ def aerial(request):
 def food(request):
     return render (request, 'jungle_app/food.html')  
 
-def anatomy(request):
-    return render(request, 'jungle_app/anatomy.html')
+def subchannels(request):
+    return render(request, 'jungle_app/subchannels.html')

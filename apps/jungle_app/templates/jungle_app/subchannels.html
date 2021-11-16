@@ -22,7 +22,15 @@
         <div id="right">
             <div id="baby_bot">baby_bot</div>
             <div id="bookmark">add a bookmark</div>
-            <div id="msg">start msg</div>
+            <div id="msg">
+                <form action="/post" method="post">
+                    {% csrf_token %}
+                    <textarea id="messagebox" name="message" row="3" cols="80"></textarea>
+                    <input type="hidden" name="id" value="request.session['u_id']">
+                    <br>
+                    <input id="msgbtn" type="submit" value="What's on your mind?">
+                </form>
+            </div>
         </div> 
     </div>
 </body>

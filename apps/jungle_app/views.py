@@ -51,9 +51,6 @@ def home(request):
     else:
         return render(request, 'jungle_app/login.html')
 
-
-
-
 def wall(request):
     context = {
         'posts' : Message.objects.all(),
@@ -61,7 +58,8 @@ def wall(request):
     return render(request, 'jungle_app/wall.html', context)
 
 def post(request):
-    print(request.session['u_id'])
+    if 'u_id' in request.sesion:
+        print(request.session['u_id'])
     message = Message.objects.create(message=request.POST['message'], messager=User.objects.get(id=request.session['u_id']))
     print(message.id)
     return redirect('/wall') 

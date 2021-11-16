@@ -8,7 +8,7 @@
         height: 100%;
         width: 100%;
         display: flex;
-        background-color:rosybrown;
+        background-color:rgb(242,237,231);
         border: 3px solid black;
     }
     #left{
@@ -22,6 +22,16 @@
         width: 100%;
         border: 1px solid black;
     }
+    #channels{
+        height: 20px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    #direct_messages{
+        height: 20px;
+        width: 100%;
+        border: 1px solid black;
+    }
     #middle{
         height: 200px;
         width: 20%;
@@ -29,9 +39,24 @@
 
     }
     #right{
-        height: 200px;
+        height: 650px;
         width: 70%;
         border: 3px solid yellow;
 
+    }
+    #baby_bot{
+        height: 30px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    #bookmark{
+        height: 30px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    #msg{
+        height: 580px;
+        width: 100%;
+        border: 1px solid black;
     }
 }

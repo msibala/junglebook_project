@@ -11,7 +11,6 @@ def index(request):
     return render(request, 'jungle_app/login.html')
 
 from .models import User
-from .models import User
 def register(request):
     errors = User.objects.basic_validator(request.POST)
     if len(errors) > 0:
@@ -37,12 +36,11 @@ def login(request):
     user = user_list[0]
     print(user.id)
 
-    # if bcrypt.checkpw(request.POST['password'].encode(), user.password.encode()):
-    #     context = {
-    #         'user': user
-    #     }
+    if bcrypt.checkpw(request.POST['password'].encode(), user.password.encode()):
+        context = {
+            'user': user
+        }
 
-    
     return render(request, 'jungle_app/wall.html')
 
 def home(request):
@@ -58,13 +56,13 @@ def wall(request):
     return render(request, 'jungle_app/wall.html', context)
 
 def post(request):
-    if 'u_id' in request.sesion:
+    if 'u_id' in request.session:
         print(request.session['u_id'])
     message = Message.objects.create(message=request.POST['message'], messager=User.objects.get(id=request.session['u_id']))
     print(message.id)
     return redirect('/wall') 
 
-    
+
 def comment(request):
     comment = Comment.objects.create(comment=request.POST['comment'], commentor=User.objects.get(id=request.session['u_id']), post=Message.objects.get(id=request.POST['post_id']))
     print(comment.id)

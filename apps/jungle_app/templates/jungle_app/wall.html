@@ -27,15 +27,6 @@
                 <p><a href="/subchannels">Subchannels</a></p>
             </div>
              <div id="messages"> 
-                <div id="message_one">
-                    <form action="/post" method="post">
-                        {% csrf_token %}
-                        <textarea id="messagebox" name="message" row="3" cols="80"></textarea>
-                        <input type="hidden" name="id" value="request.session['u_id']">
-                        <br>
-                        <input id="msgbtn" type="submit" value="What's on your mind?">
-                    </form>
-                 </div> 
                  <div id="message_one">
                     <form action="/post" method="post">
                         {% csrf_token %}
@@ -63,8 +54,8 @@
                         <input type="hidden" name="id" value="request.session['u_id']">
                         <input type="hidden" name="post_id" value="{{post.id}}">
                         <input id="cmtbtn" type="submit" value="Post a comment!">
-                        {% endfor %} 
                     </form>
+                    {% endfor %} 
                  </div>
             </div>
         </div>

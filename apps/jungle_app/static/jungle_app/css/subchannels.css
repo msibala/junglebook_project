@@ -8,55 +8,58 @@
         height: 100%;
         width: 100%;
         display: flex;
-        background-color:rgb(242,237,231);
-        border: 3px solid black;
+        color:silver;
+        font-family: lato, sans-serif;
+        background-color:rgb(25,29,33);
+        /* background-color:rgb(242,237,231); */
+        border: 3px solid rgb(176,176,177);
     }
     #left{
         height: 500px;
         width: 5%;
-        border: 3px dashed blue;
+        border: 3px dashed rgb(176,176,177);
 
     }
     #top{
         height: 20px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(176,176,177);
     }
     #channels{
         height: 20px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(176,176,177);
     }
     #direct_messages{
         height: 20px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(176,176,177);
     }
     #middle{
         height: 200px;
         width: 20%;
-        border: 3px solid pink;
+        border: 3px solid rgb(176,176,177);
 
     }
     #right{
         height: 650px;
         width: 70%;
-        border: 3px solid yellow;
+        border: 3px solid rgb(176,176,177);
 
     }
     #baby_bot{
         height: 30px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(176,176,177);
     }
     #bookmark{
         height: 30px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(176,176,177);
     }
     #msg{
         height: 580px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(176,176,177)
     }
 }

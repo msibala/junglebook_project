@@ -10,7 +10,7 @@
         display: flex;
         color:silver;
         font-family: lato, sans-serif;
-        background-color:rgb(25,29,33);
+        background-color: rgb(27,29,33);
         /* background-color:rgb(242,237,231); */
         border: 3px solid rgb(176,176,177);
     }
@@ -61,5 +61,10 @@
         height: 580px;
         width: 100%;
         border: 1px solid rgb(176,176,177)
+    }
+    #messagebox{
+        border: 1px solid grey;
+        width: 99%;
+        height: 40px;
     }
 }

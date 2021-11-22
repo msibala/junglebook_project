@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^food$', views.food),
     url(r'^animals$', views.animals),
     url(r'^subchannels$', views.subchannels),
+    url(r'^channel_post$', views.channel_post),
   
 
  

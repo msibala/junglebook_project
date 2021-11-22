@@ -98,3 +98,11 @@ def food(request):
 
 def subchannels(request):
     return render(request, 'jungle_app/subchannels.html')
+
+
+def channel_post(request):
+    if 'u_id' in request.session:
+        print(request.session['u_id'])
+    message = Message.objects.create(message=request.POST['message'], messager=User.objects.get(id=request.session['u_id']))
+    print(message.id)
+    return redirect('/subchannels') 

@@ -11,7 +11,7 @@
         color: black;
         font-family: lato, sans-serif;
         background-color: rgb(242,237,231);
-        border: 3px solid rgb(176,176,177);
+        /* border: 3px solid rgb(176,176,177); */
     }
     /* #left{
         height: 500px;
@@ -25,46 +25,47 @@
     #top{
         height: 20px;
         width: 100%;
-        border: 1px solid rgb(176,176,177);
+        border-bottom: 1px solid rgb(176,176,177);
     }
     #channels{
         height: 20px;
         width: 100%;
-        border: 1px solid rgb(176,176,177);
+        border-bottom: 1px solid rgb(176,176,177);
+       
     }
     #direct_messages{
         height: 20px;
         width: 100%;
-        border: 1px solid rgb(176,176,177);
+        border-bottom: 1px solid rgb(176,176,177);
     }
     #middle{
         height: 200px;
         width: 27%;
         background-color: rgb(220,223,224);
-        border-radius: 4px;
+        border-radius: 7px;
 
     }
     #right{
         height: 650px;
         width: 70%;
         background-color: rgb(220,223,224);
-        border-radius: 4px;
+        border-radius: 7px;
 
     }
     #baby_bot{
         height: 30px;
         width: 100%;
-        border: 1px solid rgb(176,176,177);
+        border-bottom: 1px solid rgb(176,176,177);
     }
     #bookmark{
         height: 30px;
         width: 100%;
-        border: 1px solid rgb(176,176,177);
+        border-bottom: 1px solid rgb(176,176,177);
     }
     #msg{
         height: 580px;
         width: 100%;
-        border: 1px solid rgb(176,176,177)
+        /* border: 1px solid rgb(176,176,177) */
     }
     #message_one{
         height: 100px;
@@ -74,5 +75,16 @@
         border: 1px solid grey;
         width: 99%;
         height: 40px;
+    }
+    input[type=submit], select {
+        width: 28%;
+        height: 30px;
+        font-size: 12px;
+        color: rgb(54,60,64);
+        text-align: center;
+        vertical-align: middle;
+        background-color: rgb(182, 188, 189);
+        border: 1px solid rgb(208,207,200);
+   
     }
 }

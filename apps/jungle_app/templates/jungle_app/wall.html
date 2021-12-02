@@ -50,7 +50,7 @@
                  </div>
                  <div id="message_one">
                     {% for post in posts reversed %} 
-                    <h3 id="postdetails">{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a>{% endif %}</h3>
+                    <h3 id="postdetails"><b>{{post.messager.first_name}} {{post.messager.last_name}} - {{post.created_at|date:'F jS Y'}} {% if post.messager.id == request.session.u_id %} <a href="/delmsg/{{post.id}}"><button>Delete</button></a>{% endif %}</b></h3>
                     <p id="post">{{post.message}}</p>
                      <!-- <p id="micro">...posted {{post.created_at|timesince}} ago.</p> -->
                      {% for comment in post.post_comments.all %}

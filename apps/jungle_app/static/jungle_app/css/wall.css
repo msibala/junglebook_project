@@ -91,6 +91,9 @@
         background-color: rgb(242,237,231);
         border: 1px solid rgb(208,207,200);
     }
+    #postdetails{ 
+        font-weight: bold;
+    }
     #msgbtn{
         margin-top: 15px;
         margin-bottom: 15px;

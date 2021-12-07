@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'jungle_app/css/wall.css' %}">
     <title>New Parents Forum</title>
 </head>
+<!-- this page shouls take two hours max to improve -->
 <body>
     <div id="container">
         <div id="header">
@@ -27,6 +28,7 @@
               <p><a href="/food">Learning Colors with Fruits & Veggies</a></p>
               <p><a href="/animals">Explore Jonathan's Jungle Book</a></p>
             </div>
+            <!-- improve this menu bar -->
              <div id="messages"> 
                  <div id="message_one">
                     <form action="/post" method="post">
@@ -46,6 +48,7 @@
                         <br>
                         <input id="msgbtn" type="submit" value="What's on your mind?">
                     </form>
+                    <!-- try and see how you can rid of the button and use javascript instead to post -->
                  </div>
                  <div id="message_one">
                     {% for post in posts reversed %} 
@@ -57,6 +60,7 @@
                      <p id="comment">{{comment.comment}} {% if comment.commentor.id == request.session.u_id %}<a href="/delcom/{{comment.id}}"><button>Delete</button></a> {% endif %}</p>
                      <!-- <p id="micro">...posted {{comment.created_at|timesince}} ago.</p> -->
                      {% endfor %}
+                     <!-- check notes on how to improve this -->
                  </div>
                  <div id="message_one">
                     <form action="/comment" method="post">
@@ -80,13 +84,6 @@
                  </div>
             </div>
         </div>
-
-
-
-
-
-
-
         <!-- <div id="footer_body">
             <div id="footer_halves">
                 <p>For the Babies:<p>

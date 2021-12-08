@@ -19,7 +19,6 @@
     height: 100%;
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
     box-sizing: border-box;
     flex-basis: 100%;
     font-size: 17px;
@@ -61,7 +60,6 @@ input[type=text], select {
 #login{
   height: 680px;
   width: 60%;
-  /* width: 380px; */
   margin-top: 40px;
   font-family: lato, sans-serif;
   padding-top: 10px;
@@ -75,6 +73,7 @@ input[type=text], select {
 .submit {
   background-color:rgb(47,63,76) ;
   border-radius: 5px;
+  padding-top: 10px;
   color: white;
   width: 150px;
   height: 45px;
@@ -91,11 +90,18 @@ input[type=text], select {
 input[type=password], select {
   height: 40px;
   width: 70%;
-  padding: 12px 20px;
+  /* padding: 12px 20px; */
+  margin-bottom: 20px;
+  /* trying to add more white space between confirm password and register button */
   margin: 8px 0;
   border: 1px solid rgb(208,207,200);
   box-sizing: border-box;
 }
+#errors{
+  padding-top: 20px;
+  color: rgb(106, 15, 15);
+}
+
 }
   
 

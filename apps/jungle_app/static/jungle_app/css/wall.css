@@ -57,7 +57,9 @@
     #navigation{
         height: 10%;
         width: 100%;
+        padding: 10px 0px;
         margin-top: 20px;
+        display: flex;
         margin-bottom: 20px;
         border-radius: 10px;
         background-color: rgb(220,223,224);

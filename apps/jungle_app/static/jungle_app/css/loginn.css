@@ -2,17 +2,21 @@
 {
     margin: 0px auto;
     padding: 0px auto;
+    font-family: 'Varela Round', sans-serif;
 }
 @media only screen and (min-width: 320px){
   #header{
     width: 100%;
     text-align:center;
-    font-family: lato, sans-serif;
+    /* font-family: lato, sans-serif; */
     padding-top: 25px;
     font-size: 42px;
+    font-weight:bold;
+    /* color: rgb(156,170,207); */
     color: rgb(47,62,75);
     letter-spacing: 3px;
-    background-color: rgb(242,237,231);
+    background-color:rgb(240,226,215);
+    /* background-color: rgb(242,237,231); */
 
   }
   #container{
@@ -22,13 +26,13 @@
     box-sizing: border-box;
     flex-basis: 100%;
     font-size: 17px;
-    background-color: rgb(242,237,231);
+    background-color:rgb(240,226,215);
+    /* background-color: rgb(242,237,231); */
 
   }
   h1{
     color: rgb(54,60,64);
     font-weight:lighter;
-    font-family: lato, sans-serif;
     font-size: 36px;
 }
 #registration{
@@ -42,7 +46,8 @@
     padding-top: 10px;
     padding-left: 20px;     
     border-right: 1px solid rgb(159,166,172);
-    background-color: rgb(242,237,231);
+    background-color:rgb(240,226,215);
+    /* background-color: rgb(242,237,231); */
 
 }
 input[type=text], select {
@@ -55,28 +60,30 @@ input[type=text], select {
     box-sizing: border-box;
     border: 1px solid rgb(208,207,200);
 
-
 }
 #login{
   height: 680px;
   width: 60%;
   margin-top: 40px;
-  font-family: lato, sans-serif;
   padding-top: 10px;
   padding-left: 100px;
   padding-right: 25px;
+  /* you can condense the padding line */
   font-weight:lighter;
   font-size: 14px;
-  background-color: rgb(242,237,231);
+  background-color:rgb(240,226,215);
+  /* background-color: rgb(242,237,231); */
   
 }
 .submit {
-  background-color:rgb(47,63,76) ;
+  background-color:rgb(47,63,76);
   border-radius: 5px;
   padding-top: 10px;
+  margin-top: 15px;
   color: white;
   width: 150px;
   height: 45px;
+  /* maybe you can name the login and register button differently */
 
 }
 /* input[type=text], select {
@@ -90,7 +97,6 @@ input[type=text], select {
 input[type=password], select {
   height: 40px;
   width: 70%;
-  /* padding: 12px 20px; */
   margin-bottom: 20px;
   /* trying to add more white space between confirm password and register button */
   margin: 8px 0;
